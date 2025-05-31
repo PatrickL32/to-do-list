@@ -1,0 +1,21 @@
+
+
+.container{
+    padding-top: 50px;
+
+    width:600px
+}
+
+h3{
+    color: darkgoldenrod;
+    font-size:20px;
+}
+
+h1{
+    color:rgb(17, 199, 144);
+}
+
+h4{
+    color:rgb(41, 131, 184);
+    margin-top: 40px;
+}

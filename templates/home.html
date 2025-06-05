@@ -43,18 +43,24 @@
   <h1> My Super ToDo List</h1>
 
 
-
-  <form>
-    <input type="text" placeholder="Your todo here">
-    <button class="btn btn-sm btn-primary">Save</button>
+<form action="/add" method="POST">
+    <input name="todo" type="text" placeholder="Your todo here">
+    <button type="submit" class="btn btn-sm btn-primary">Save</button>
   </form>
 
-  <ul class="list">
+  <!--<ul class="list">
     <li> Get almond milk</li>
     <li> walk the dog</li>
     <li> Take out the trash</li>
-  </ul>
+  </ul>-->
   
+  
+  <ul class="list-group">
+    {% for todo in todo_list_identifier %}
+      <li class="list-group-item">{{todo}}</li>
+    {% endfor %}
+  </ul>
+
 </main>
 
 

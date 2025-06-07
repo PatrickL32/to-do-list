@@ -32,11 +32,17 @@ def about():
 def contact():
     return render_template('contact.html')
 
+all_images=[]
 
+@server.get("/gallery")
+def gallery():
+    return render_template("gallery.html", all_images=all_images)
 
+@server.post("/addImage")
+def add_image():
+    image_url = request.form.get("image")
+    all_images.append(image_url)
+    return redirect(url_for("gallery"))
 
-
-            
-server.run(debug= True)
 #start the server
 server.run(debug=True)

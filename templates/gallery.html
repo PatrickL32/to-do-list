@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/static/css/gallery.css" rel="stylesheet" />
+  </head>
+
+
+    <main class="conatiner">
+      <h1>My Gallery</h1>
+      <h5>Add images at the bottom of the page</h5>
+
+    {% include 'navbar.html'%}
+      <div>
+        {% for img_url in all_images %}
+        <img src="{{ img_url }}" />
+        {% endfor %}
+      </div>
+
+    <form method="POST" action="/addImage">
+        <input name="image" type="url" placeholder="URL of your image" />
+        <button class="btn btin-sm btn-dark">Add</button>
+    </form>
+    </main>
+</body>
+</html>

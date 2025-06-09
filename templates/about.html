@@ -6,23 +6,31 @@
     <title>Document</title>
     <link href="/static/css/about.css" rel="stylesheet">
 </head>
-<body>
+<body class ="trans-flag-background">
 
 <main class ="conatiner">
-    <h3> Page by:</h3>
-    <h1> Patrick Lewis</h1>
-
     {% include 'navbar.html'%}
+    
+    <div class="text-center">
+        <h3> Page by:</h3>
+        <h1> Patrick Lewis</h1>
 
-    <h1> About me:</h1>
-    <p> Im out and proud trans guy.</p>
+
+
+        <h1> About me:</h1>
+        
+        <p> Im out and proud trans guy.</p>
+        <p> Happy pride month! </p>
+        
+        <form method="POST" action="/addImage">
+            <input name="image" type="url" placeholder="URL of your image" />
+            <button class="btn btin-sm btn-dark">Add</button>
+        </form>
+    </div>
+
 </main>
 </body>
 </html>
 
 
 
-<form>
-    <input type="url" placeholder="URL of ypur image">
-    <button></button>
-</form>

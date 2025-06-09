@@ -1,5 +1,19 @@
 
-
+.trans-flag-background {
+background: linear-gradient(
+    to bottom,
+    #5bcefa 0%,    /* Light Blue */
+    #5bcefa 20%,
+    #f5a9b8 20%,   /* Pink */
+    #f5a9b8 40%,
+    #ffffff 40%,   /* White */
+    #ffffff 60%,
+    #f5a9b8 60%,   /* Pink */
+    #f5a9b8 80%,
+    #5bcefa 80%,   /* Light Blue */
+    #5bcefa 100%
+);
+}
 .container{
     padding-top: 50px;
 
@@ -7,15 +21,15 @@
 }
 
 h3{
-    color: darkgoldenrod;
+    color:whitesmoke;
     font-size:20px;
 }
 
 h1{
-    color:rgb(17, 199, 144);
+    color:#f5a9b8;
 }
 
 h4{
-    color:rgb(41, 131, 184);
+    color:rgb(162, 215, 233);
     margin-top: 40px;
 }

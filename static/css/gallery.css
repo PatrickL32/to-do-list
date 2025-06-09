@@ -1,8 +1,26 @@
-body {
-    background-color: #30f461;
-background: rgba(127, 219, 98, 1.0);
-background: linear-gradient(135deg, rgba(127, 219, 98, 1.0), rgba(223, 216, 15, 1.0));
+/* ...existing code... */
 
+.lgbtq-flag-background {
+  background: linear-gradient(
+    to bottom,
+    #ff0000 0%,      /* Red */
+    #ff0000 16.66%,
+    #ff7f00 16.66%,  /* Orange */
+    #ff7f00 33.32%,
+    #ffff00 33.32%,  /* Yellow */
+    #ffff00 49.98%,
+    #00ff00 49.98%,  /* Green */
+    #00ff00 66.64%,
+    #0000ff 66.64%,  /* Blue */
+    #0000ff 83.3%,
+    #4b0082 83.3%,   /* Indigo/Violet */
+    #4b0082 100%
+  );
+}
+
+details {
+    text-align: center;
+    margin-top: 12px;
 }
 
 main {
@@ -24,7 +42,7 @@ h5{
 form{
     border:1px solid rgb(208, 173, 44);
     padding:12px;
-    border: radius 4px;
+    border-radius: 4px;
     width:260px;
     background-color:chartreuse;
     margin-top:20px;

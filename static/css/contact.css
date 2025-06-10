@@ -1,21 +1,25 @@
 .container {
-    max-width: 500px;
-    margin-top: 200px;
+max-width: 500px;
+margin-top: 200px;
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
 }
-
+body {
+background-image: url("<image-tokens-bardstorage://RESPONSE_DATA:00063730399e801d01306a4b3616476bb74be1cb4d18eab5:64315451520963659628496651c4edcfd3f:0:>");
+background-size: cover;
+background-repeat: no-repeat;
+}
 h3 {
-    text-align: center;
-    color: rgb(167, 180, 64);
+text-align: center;
 }
 
 main {
-    border: 1px solid rgb(72, 242, 11);
-    border-radius: 6px;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: purple;
+border: 1px solid silver;
+border-radius: 6px;
+margin-top: 30px;
+padding: 20px;
+background: linear-gradient(135deg, rgb(70, 1, 70), darkorchid, purple);
 }
-
 form {
-    padding: 20px;
+padding: 20px;
 }

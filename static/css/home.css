@@ -1,13 +1,20 @@
+/* ...existing code... */
+
+main {
+    background: linear-gradient(rgb(220, 61, 196), rgb(160, 89, 226),darkorchid);
+    min-height: 100vh; /* ensures it covers the full viewport height */
+    padding: 40px 0;
+}
+
 h1{
-    color:chartreuse;
+    color:rgb(238, 232, 232);
     text-align: center;
 
 }
-
 form{
-    border:1px solid gold;
+    border:1px solid white;
     border-radius: 6px;
-    background-color: rgb(36, 193, 193);
+    background-color:chartreuse;
     padding:20px;
     width:280px;
     margin-left:auto;

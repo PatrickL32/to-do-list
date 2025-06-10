@@ -44,5 +44,59 @@ def add_image():
     all_images.append(image_url)
     return redirect(url_for("gallery"))
 
-#start the server
+
+
+#--------------Online Store---------
+
+all_products = [
+    {
+        "title": "Toothpaste",
+        "price":  9.00,
+        "image":"https://m.media-amazon.com/images/I/612MXu5fFoL._SX466_.jpg"
+    },
+    {
+        "title": "Mints",
+        "price": 4.00 ,
+        "image":"https://m.media-amazon.com/images/I/81p9PcPsffL._AC_UL480_FMwebp_QL65_.jpg"
+    },
+    {
+            "title": "floss",
+            "price":4.00,
+            "image":"https://m.media-amazon.com/images/I/31hTE829EOL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+            "title": "Tooth brushes",
+            "price": 5.00,
+            "image":"https://m.media-amazon.com/images/I/71hcRuTJYeL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+            "title": "whitening strips",
+            "price": 20.00,
+            "image":"https://m.media-amazon.com/images/I/81I12YXEuPL._AC_SX679_.jpg"
+    },
+    {
+            "title":"mouth wash",
+            "price": 6.00,
+            "image":"https://m.media-amazon.com/images/I/71R1J7lz6zL._AC_SY879_.jpg"
+    },
+    {
+            "title":"water pick",
+            "price":48,
+            "image":"https://m.media-amazon.com/images/I/61LVwSVLvyL._AC_SX679_.jpg"
+    }
+
+]
+
+@server.get("/catalog")
+def catalog():
+    return render_template('catalog.html', all_products=all_products)
+
+@ server.get("/cart")
+def cart():
+    return render_template('cart.html')
+
+
+
+
+
 server.run(debug=True)

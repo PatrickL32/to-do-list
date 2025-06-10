@@ -1,0 +1,27 @@
+
+h1{
+    text-align:center ;
+    color: darkorchid;
+    padding:20px ;
+}
+.product{
+    border:1px solid gold;
+    width:250px;
+    text-align: center;
+    display:inline-block;
+    margin:12px 12px 12px;
+    padding:10px;
+    height: 320px;
+    vertical-align: top;
+}
+
+.product img {
+    height:180px;
+    max-width: 90%; ;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.product label {
+    display: block;
+}

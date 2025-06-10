@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store</title>
+    <link href="/static/css/catalog.css" rel="stylesheet">
+</head>
+
+<body>
+{% include 'navbar.html'%}
+
+<main class ="container">
+    <h1> Check out our amazing products!!</h1>
+
+
+    <div class="list">
+        {% for prod in all_products%}
+        <div>
+            <img src="{{prod.image}}">
+            <h5>{{prod.title}}</h5>
+            <label>${{prod.price}}</label>
+            
+            <button class=" btn btn-sm btn-info">Add</button>
+        </div>
+    {%endfor%}
+    </div>
+</main>
+
+</body>
+
+</html>

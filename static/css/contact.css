@@ -4,11 +4,14 @@ margin-top: 200px;
   margin-left: auto; /* Center horizontally */
   margin-right: auto; /* Center horizontally */
 }
+
 body {
-background-image: url("<image-tokens-bardstorage://RESPONSE_DATA:00063730399e801d01306a4b3616476bb74be1cb4d18eab5:64315451520963659628496651c4edcfd3f:0:>");
-background-size: cover;
-background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #fcf434 25%, #ffffff 25% 50%, #9c59d1 50% 75%, #2c2c2c 75%);
+  background-size:cover;
+  background-repeat:no-repeat;
 }
+
+
 h3 {
 text-align: center;
 }

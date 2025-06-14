@@ -16,14 +16,21 @@
 
     <div class="list">
         {% for prod in all_products%}
-        <div>
+        
+        <div class="product">
             <img src="{{prod.image}}">
             <h5>{{prod.title}}</h5>
             <label>${{prod.price}}</label>
-            
+
+        <form method="post" action="/addtoCart">
+            <input name="title" type ="hidden" value="{{prod.title}}">
             <button class=" btn btn-sm btn-info">Add</button>
-        </div>
+        </form>
+        
+    </div>
+
     {%endfor%}
+
     </div>
 </main>
 

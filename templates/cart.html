@@ -11,9 +11,17 @@
 {% include 'navbar.html'%}
 
 <main class ="container">
-    <h1> Ready to checkout?</h1>
+    <h1> Ready to complete your order?</h1>
     
-</main>
+    {% for prod in cart_prods %}
+    <div class="merchindise">
+        <img src="{{prod.image}}">
+        <h5>{{ prod.title}}</h5>
+        <label>${{prod.price}}</label>
+    </div>
+        {% endfor %}
+
+    </main>
 
 </body>
 

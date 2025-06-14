@@ -1,0 +1,29 @@
+
+
+.item{
+    border:solid 1px goldenrod;
+    display:flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 16px;
+    background:rgb(86, 4, 71);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(174, 92, 163, 0.2);
+}
+
+.item img{
+    height: 80px;
+    width:auto;
+    max-width :120px; 
+    border-radius:8px ;
+    object-fit:cover;
+    margin-right: 16px;
+
+}
+
+.item label{
+    margin-left: auto;
+    font-weight:bold ;
+    font: size 20px;
+    color: rgb(145, 8,120);
+}

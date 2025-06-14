@@ -1,21 +1,7 @@
 /* ...existing code... */
 
-.lgbtq-flag-background {
-  background: linear-gradient(
-    to bottom,
-    #ff0000 0%,      /* Red */
-    #ff0000 16.66%,
-    #ff7f00 16.66%,  /* Orange */
-    #ff7f00 33.32%,
-    #ffff00 33.32%,  /* Yellow */
-    #ffff00 49.98%,
-    #00ff00 49.98%,  /* Green */
-    #00ff00 66.64%,
-    #0000ff 66.64%,  /* Blue */
-    #0000ff 83.3%,
-    #4b0082 83.3%,   /* Indigo/Violet */
-    #4b0082 100%
-  );
+body{
+    background:linear-gradient(#FF218c,#FFD800,#21B1FF)
 }
 
 details {
@@ -28,23 +14,23 @@ main {
 }
 
 h1 {
-    color: rgb(212, 60, 197);
+    color: rgb(222, 203, 220);
     text-align:center;
     padding-top:20px ;
 }
 
 h5{
-    color: rgb(60, 221, 79);
+    color: rgb(236, 232, 14);
     font-size:14px ;
     text-align: center;
 }
 
 form{
-    border:1px solid rgb(208, 173, 44);
+    border:1px solid rgb(33, 165, 231);
     padding:12px;
     border-radius: 4px;
     width:260px;
-    background-color:chartreuse;
+    background-color:rgb(200, 89, 228);
     margin-top:20px;
     margin-left:auto;
     margin-right: auto;
@@ -53,13 +39,15 @@ form{
 }
 
 img{
-    height:300px;
+    height:225px;
+    width:200px;
+    border-radius: cover;
 }
 
 
 img:hover{
     border:2px solid tomato;
-    height:450px;
+    height:225px;
     transition: height 0.3s ease;
     border-radius: 10px;
 }

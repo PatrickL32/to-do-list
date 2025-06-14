@@ -33,7 +33,14 @@ def about():
 def contact():
     return render_template('contact.html')
 
-all_images=[]
+all_images=[ "https://m.media-amazon.com/images/I/612MXu5fFoL._SX466_.jpg",
+            "https://m.media-amazon.com/images/I/81p9PcPsffL._AC_UL480_FMwebp_QL65_.jpg",
+            "https://m.media-amazon.com/images/I/31hTE829EOL._SX300_SY300_QL70_FMwebp_.jpg",
+            "https://m.media-amazon.com/images/I/71hcRuTJYeL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+            "https://m.media-amazon.com/images/I/81I12YXEuPL._AC_SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71R1J7lz6zL._AC_SY879_.jpg",
+            "https://m.media-amazon.com/images/I/71rHWCneOfL._SX466_.jpg",
+]
 
 @server.get("/gallery")
 def gallery():

@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <body class=".asexual-flag-background">
-    </body>
-
     <link href="/static/css/cart.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="asexual-flag-background">
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <!-- Include the navbar -->
 {% include 'navbar.html'%}
 
-<main class ="container">
+<main class ="container asexual-flag-background">
     <h1> Ready to complete your order?</h1>
     
     {% for prod in cart_prods %}
-    <div class="merchindise">
+    <div class="item">
         <img src="{{prod.image}}">
         <h5>{{ prod.title}}</h5>
         <label>${{prod.price}}</label>
     </div>
-        {% endfor %}
+    {% endfor %}
 
     </main>
 

@@ -9,12 +9,13 @@
 
 <body class="lgbtq-flag-background">
   
-    <main class="conatiner">
+  {% include 'navbar.html'%}
+    
+  <main class="conatiner">
       <h1>My Gallery</h1>
       <h5>Add images at the bottom of the page</h5>
 
-    {% include 'navbar.html'%}
-      <div>
+        <div>
         {% for img_url in all_images %}
         <img src="{{ img_url }}" />
         {% endfor %}

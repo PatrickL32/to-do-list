@@ -5,13 +5,6 @@ margin-top: 200px;
   margin-right: auto; /* Center horizontally */
 }
 
-body {
-  background: linear-gradient(to bottom, #fcf434 25%, #ffffff 25% 50%, #9c59d1 50% 75%, #2c2c2c 75%);
-  background-size:cover;
-  background-repeat:no-repeat;
-}
-
-
 h3 {
 text-align: center;
 }
@@ -21,8 +14,11 @@ border: 1px solid silver;
 border-radius: 6px;
 margin-top: 30px;
 padding: 20px;
-background: linear-gradient(135deg, rgb(70, 1, 70), darkorchid, purple);
+background:linear-gradient(to bottom, #fcf434 25%, #ffffff 25% 50%, #9c59d1 50% 75%, #2c2c2c 75%);
+background-size:cover;
+background-repeat:no-repeat
 }
+
 form {
 padding: 20px;
 }

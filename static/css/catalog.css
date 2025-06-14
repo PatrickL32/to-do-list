@@ -1,8 +1,12 @@
 
 h1{
     text-align:center ;
-    color: darkorchid;
+    color: rgb(231, 207, 243);
     padding:20px ;
+}
+body {
+    background: linear-gradient(135deg,rgb(88, 11, 127), darkorchid, #c248bc);
+    min-height: 100vh;
 }
 .product{
     border:1px solid gold;

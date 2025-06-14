@@ -1,13 +1,12 @@
 /* ...existing code... */
-
-main {
-    background: linear-gradient(rgb(220, 61, 196), rgb(160, 89, 226),darkorchid);
-    min-height: 100vh; /* ensures it covers the full viewport height */
-    padding: 40px 0;
+.progress-pride-background {
+background:
+    linear-gradient(135deg, #000000 16.67%, #613915 16.67%, #613915 33.33%, #74D7EE 33.33%, #74D7EE 50%, #FFAFC8 50%, #FFAFC8 66.67%, #FFFFFF 66.67%, #FFFFFF 83.33%),
+    linear-gradient(to bottom, #E40303, #FF8C00, #FFED00, #008026, #24408E, #732982);
 }
 
 h1{
-    color:rgb(238, 232, 232);
+    color:rgb(244, 216, 216);
     text-align: center;
 
 }

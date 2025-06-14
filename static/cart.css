@@ -1,12 +1,15 @@
 
-
+body {
+    background: #afe1e3,#66d0e7,#4c9cb8,#205d8a;
+    min-height: 100vh;
+}
 .item{
     border:solid 1px goldenrod;
     display:flex;
     align-items: center;
     padding: 16px;
     margin-top: 16px;
-    background:rgb(86, 4, 71);
+    background:rgb(229, 224, 228);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(174, 92, 163, 0.2);
 }

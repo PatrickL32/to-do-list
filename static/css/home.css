@@ -1,9 +1,44 @@
 /* ...existing code... */
 .progress-pride-background {
-background:
-    linear-gradient(135deg, #000000 16.67%, #613915 16.67%, #613915 33.33%, #74D7EE 33.33%, #74D7EE 50%, #FFAFC8 50%, #FFAFC8 66.67%, #FFFFFF 66.67%, #FFFFFF 83.33%),
-    linear-gradient(to bottom, #E40303, #FF8C00, #FFED00, #008026, #24408E, #732982);
+  min-height: 200vh;
+  background-color: #732982; /* Fallback color */
+  background-image:
+    /* Top Layer: The chevron (Progress colors) */
+    linear-gradient(
+      105deg,
+      #000000 0,
+      #000000 10%,
+      #613915 10%,
+      #613915 20%,
+      #FFFFFF 20%,
+      #FFFFFF 30%,
+      #FFAFC8 30%,
+      #FFAFC8 40%,
+      #74D7EE 40%,
+      #74D7EE 50%,
+      transparent 50%
+    ),
+    /* Bottom Layer: The rainbow stripes */
+    linear-gradient(
+      to bottom,
+      #E40303 0%,
+      #E40303 16.67%,
+      #FF8C00 16.67%,
+      #FF8C00 33.33%,
+      #FFED00 33.33%,
+      #FFED00 50%,
+      #008026 50%,
+      #008026 66.67%,
+      #24408E 66.67%,
+      #24408E 83.33%,
+      #732982 83.33%
+    );
+
+background-repeat: no-repeat;
+background-position: left, center;
+background-size: 30% 100%, 100% 100%;
 }
+
 
 h1{
     color:rgb(244, 216, 216);
@@ -15,7 +50,7 @@ form{
     border-radius: 6px;
     background-color:chartreuse;
     padding:20px;
-    width:280px;
+    width:220px;
     margin-left:auto;
     margin-right:auto;
 }

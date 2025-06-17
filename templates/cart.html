@@ -8,14 +8,12 @@
 </head>
 
 <body class="asexual-flag-background">
+{% include 'navbar.html'%}
     <header>
-        <h1>Shopping Cart</h1>
+        <h1>Cart</h1>
     </header>
 
-    <!-- Include the navbar -->
-{% include 'navbar.html'%}
-
-<main class ="container asexual-flag-background">
+<main>
     <h1> Ready to complete your order?</h1>
     
     {% for prod in cart_prods %}
@@ -25,6 +23,11 @@
         <label>${{prod.price}}</label>
     </div>
     {% endfor %}
+
+    <div class="info">
+        <label class="label">your total is:</label>
+        <label class="value">${{ total}}</label>
+    </div>
 
     </main>
 

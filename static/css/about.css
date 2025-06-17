@@ -33,3 +33,14 @@ h4{
     color:rgb(162, 215, 233);
     margin-top: 40px;
 }
+
+.some-class {
+    width:300px; /*medium width*/
+    height:40px;/*medium height*/
+    background-image: url('/static/images/IMG-20250616-WA0007.jpg');
+    background-size: contain;/*or use 'cover'if you want it to fill the box*/
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius:8px;/*Optinal:rounded corners*/
+    margin:20px auto;/*Optional: center on the page*/
+}

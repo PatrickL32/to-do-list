@@ -112,26 +112,41 @@ def cart():
     We have the title on the cart_list
     but we need all the data of each product, not just the titles
 
-
     we get the title,
     we find the product for that title
     we send the list of prods instead of just the titles
     """
-    cart_prods =[]
+    cart_prods = []
     for title in cart_list:
         for prod in all_products:
-            if prod["title"]==title:
-                #found the match
+            if prod["title"] == title:
+                # found the match
                 cart_prods.append(prod)
 
+    total = 0
+    for prod in cart_prods:
+        total += prod["price"]
 
+    return render_template("cart.html", cart_prods=cart_prods, total=total)
 
+@server.get("/admin")
+def admin():
+    return render_template("admin.html")
 
+@server.post("/save Product")
+def save_product():
+    title = request.form.get('title')
+    price = request.form.get('price')
+    image = request.form.get('image')
+    # You may want to add logic to save the product here
+    product ={
+        "title": title,
+        "price":  float(price),
+        "image": image
+    }
 
-    return render_template("cart.html", cart_prods=cart_prods)
+    all_products.append(product)
 
-
-
-
+    return redirect(url_for('catalog'))
 
 server.run(debug=True)
